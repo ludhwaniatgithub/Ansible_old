@@ -1,0 +1,24 @@
+---
+- name: install httpd vsftpd
+  hosts: dev
+  tasks: 
+    - name: install kariya
+      yum: 
+        name: httpd
+        state: latest
+    - name: start service
+      service: 
+        name:  httpd
+        enabled: true
+        state: started
+    - name:  firewall start
+      firewalld:
+        service: http
+        permanent: true
+        state: enabled 
+        immediate: yes
+    - name: file
+      copy:
+        content: "hello world"
+        dest: /var/www/html/index.html
+

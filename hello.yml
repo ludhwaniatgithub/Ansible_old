@@ -1,0 +1,21 @@
+---
+- name: launching a website
+  hosts: server 
+  tasks: 
+    - name: installing a package
+      yum:
+        name: "{{ web_package }}"
+        state: present
+    - name: write the content
+      copy: 
+        content: "its my first website through ansible playbook"
+        dest: /var/www/html/index.html
+    - name: starting the service
+      service: 
+        name: httpd
+        state: started
+        enabled: yes
+    - name: start firewalld
+      firewalld:
+        service: http
+        permanent: true   

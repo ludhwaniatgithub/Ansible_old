@@ -1,0 +1,52 @@
+2018-12-29 01:37:02,836 p=7729 u=devops |   [WARNING]: module content not found in: /home/devops/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/lib/python2.7/site-packages/ansible/modules
+
+2018-12-29 01:40:00,622 p=7778 u=devops |  ERROR! Incorrect options passed
+2018-12-29 01:42:22,700 p=7826 u=devops |   [ERROR]: User interrupted execution
+
+2018-12-29 01:42:38,622 p=7833 u=devops |   [ERROR]: User interrupted execution
+
+2018-12-29 01:47:39,703 p=7909 u=devops |    hosts (2):
+2018-12-29 01:47:39,703 p=7909 u=devops |      192.168.1.21
+2018-12-29 01:47:39,704 p=7909 u=devops |      192.168.1.22
+2018-12-29 01:49:24,961 p=7937 u=devops |  ERROR! Extraneous options or arguments
+2018-12-29 01:49:36,644 p=7942 u=devops |  ERROR! Extraneous options or arguments
+2018-12-29 01:49:46,255 p=7947 u=devops |  192.168.1.22 | FAILED | rc=2 >>
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destinationnon-zero return code
+
+2018-12-29 01:49:47,707 p=7947 u=devops |  192.168.1.21 | FAILED | rc=2 >>
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destinationnon-zero return code
+
+2018-12-29 01:50:12,526 p=8051 u=devops |  192.168.1.22 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2018-12-29 01:50:12,999 p=8051 u=devops |  192.168.1.21 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2018-12-29 01:54:34,465 p=8223 u=devops |  192.168.1.22 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2018-12-29 01:54:35,069 p=8223 u=devops |  192.168.1.21 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2018-12-29 01:55:40,225 p=8427 u=devops |  192.168.1.22 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2018-12-29 01:55:41,156 p=8427 u=devops |  192.168.1.21 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+

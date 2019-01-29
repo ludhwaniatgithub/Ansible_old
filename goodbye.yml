@@ -1,0 +1,12 @@
+---
+- hosts: all
+  vars: 
+    web_pack: mutt
+  tasks: 
+  - name: installing a package
+    yum: 
+      name:
+        - "{{ web_pack }}"
+      state: latest
+    register: install_p
+  - debug: var=install_p
